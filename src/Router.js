@@ -4,9 +4,9 @@ import Landing from './components/Landing';
 
 const RouterComponent = () => {
   return (
-    <Router>
+    <Router sceneStyle={{ marginTop: 60 }}>
       <Scene key="root">
-        <Scene key="landing" component={Landing} title="Landing" />
+        <Scene key="landing" component={Landing} title="Landing" hideNavBar={true} initial />
       </Scene>
     </Router>
   );
