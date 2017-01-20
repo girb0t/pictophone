@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import { Actions } from 'react-native-router-flux';
 
 import { Button } from '../components/common';
 
@@ -25,12 +25,12 @@ class Landing extends Component {
             </Button>
           </View>
           <View style={buttonContainerStyle}>
-            <Button onPress={(() => console.log('Gallery'))}>
+            <Button onPress={Actions.gallery}>
               Gallery
             </Button>
           </View>
           <View style={buttonContainerStyle}>
-            <Button onPress={(() => console.log('Rules'))}>
+            <Button onPress={Actions.rules}>
               Rules
             </Button>
           </View>
