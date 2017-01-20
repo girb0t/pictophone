@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
 
-import { Button } from './common';
+import { Button } from '../components/common';
 
 class Landing extends Component {
   render() {

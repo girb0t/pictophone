@@ -1,6 +1,6 @@
 import React from 'react';
 import { Scene, Router } from 'react-native-router-flux';
-import Landing from './components/Landing';
+import Landing from './containers/Landing';
 
 const RouterComponent = () => {
   return (
