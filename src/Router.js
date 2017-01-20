@@ -1,10 +1,11 @@
 import React from 'react';
 import { Scene, Router } from 'react-native-router-flux';
 import Landing from './containers/Landing';
+import NewGame from './containers/NewGame';
 
 const RouterComponent = () => {
   return (
-    <Router sceneStyle={{ marginTop: 60 }}>
+    <Router sceneStyle={{ marginTop: 70 }}>
       <Scene key="root">
         <Scene
           key="landing"
@@ -13,6 +14,7 @@ const RouterComponent = () => {
           hideNavBar
           initial
         />
+        <Scene key="newGame" component={NewGame} title="Starting Phrase" hideNavBar={false} />
       </Scene>
     </Router>
   );
