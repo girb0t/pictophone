@@ -6,7 +6,13 @@ const RouterComponent = () => {
   return (
     <Router sceneStyle={{ marginTop: 60 }}>
       <Scene key="root">
-        <Scene key="landing" component={Landing} title="Landing" hideNavBar={true} initial />
+        <Scene
+          key="landing"
+          component={Landing}
+          title="Landing"
+          hideNavBar
+          initial
+        />
       </Scene>
     </Router>
   );
