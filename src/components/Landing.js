@@ -48,8 +48,6 @@ const style = {
     // borderColor: 'red',
   },
   titleContainerStyle: {
-    // paddingTop: 40,
-    // paddingBottom: 40,
   },
   titleStyle: {
     fontSize: 50,
