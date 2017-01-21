@@ -55,7 +55,6 @@ const style = {
     // borderWidth: 1,
   },
   buttonContainerStyle: {
-    height: 42,
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 10,
