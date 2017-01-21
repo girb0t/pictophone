@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import { connect } from 'react-redux';
 
 import { Input, Button } from '../components/common';
+import { phraseInputValueChanged } from '../actions';
 
 class NewGame extends Component {
+  onPhraseChange(newPhrase) {
+    this.props.phraseInputValueChanged(newPhrase);
+  }
+
   render() {
+    console.log(this.props.phraseInputValue)
     const {
       containerStyle,
       inputContainerStyle,
@@ -19,9 +26,9 @@ class NewGame extends Component {
         </View>
         <View style={inputContainerStyle}>
           <Input
-            value=''
+            value={this.props.phraseInputValue}
             placeholder='Your phrase...'
-            nChangeText={(yolo) => console.log('text changed')}
+            onChangeText={newPhrase => this.onPhraseChange(newPhrase)}
           />
         </View>
         <View style={buttonContainerStyle}>
@@ -52,4 +59,11 @@ const styles = {
   }
 };
 
-export default NewGame;
+const mapStateToProps = (state) => {
+  const { phraseInputValue } = state.game;
+  return { phraseInputValue };
+};
+
+export default connect(mapStateToProps, {
+  phraseInputValueChanged
+})(NewGame);

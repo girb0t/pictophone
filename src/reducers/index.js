@@ -1,9 +1,6 @@
 import { combineReducers } from 'redux';
-
-specificReducer = (state = { yolo: '' }, action) => {
-  return state;
-};
+import GameReducer from './GameReducer';
 
 export default combineReducers({
-  yolo: specificReducer
+  game: GameReducer
 });
