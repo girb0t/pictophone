@@ -23,7 +23,7 @@ const styles = {
     paddingBottom: 10,
   },
   buttonStyle: {
-    flex: 1,
+    height: 42,
     backgroundColor: '#fff',
     borderRadius: 5,
     borderWidth: 1,
