@@ -4,3 +4,4 @@
 // `export * from ...` syntax is used to re-export all exports of the imported module.
 
 export * from './Button';
+export * from './Input';
