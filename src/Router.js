@@ -1,6 +1,6 @@
 import React from 'react';
 import { Scene, Router } from 'react-native-router-flux';
-import Landing from './containers/Landing';
+import Landing from './components/Landing';
 import NewGame from './containers/NewGame';
 import Rules from './containers/Rules';
 import Gallery from './containers/Gallery';
